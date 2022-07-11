@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template 1</title>
+</head>
+<body>
+    <div id="div1" style=" padding:0px 2px;">
+        <div class="heading"><h2>KM Custom HTML Form Example Using AppleScript</h2>
+            </div>
+            <p style="text-align: center;">(by JMichaelTX)</p>
+            <form action="#" style=" padding:0px 2px;">
+    <table>
+        
+            <tr>
+                <td><p>Name:</p></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><p>Email:</p></td>
+                <td><input type="email"></td>
+            </tr>
+        
+            <tr>
+                <td><p>Password:</p></td>
+                <td><input type="password"></td>
+            </tr>
+        
+            <tr>
+                <td><p>Approval Required:</p><p id="smallp">
+                        click on the button or text to select
+                    </p></td>
+                <td><label for="Approval"><input id="Approval" type="checkbox">Do you approve?</label></td>
+            </tr>
+        
+            <tr>
+                <td><p>Pick Your Favorite:</p></td>
+                <td style="display:grid">
+                    <label for="picker"><input id="picker" name="pick" type="radio">Choice A</label>
+                    <label for="picker1"><input id="picker1" name="pick" type="radio">Choice B</label>
+                    <label for="picker2"><input id="picker2" name="pick" type="radio">Choice C</label>
+                </td>
+            </tr>
+        
+            <tr>
+                <td><p>Popup Menu:</p></td>
+                <td><select name="pop" id="">
+                    <option value="texas">Texas -- TX</option>
+                    <option value="">Calefornia -- CL</option>
+                    <option value="">Khalilabad --KH</option>
+                </select></td>
+            </tr>
+        
+            <tr>
+                <td><p>List</p>
+                <p id="smallp">Setup Options</p>
+            <blockquote><ul><li>Number of rows to display</li><li>Allow Multi Select</li></ul></blockquote></td>
+                <td><select name="" id="" style="height:80px" multiple>
+                    <option value="">Calinfornia -- CA</option>
+                    <option value="">Colorado -- CO</option>
+                    <option value="">Connecticut -- CN</option>
+                    <option value="">Dalifornia -- DL</option>
+                    <option value="">Delhi -- DL</option>
+                    <option value="">Banaluru -- BG</option>
+                </select></td>
+            </tr>
+        
+            <tr>
+                <td><p>Fiel Ignored by KM</p></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><p>Text Area</p></td>
+                <td><textarea name="" id="" cols="35" rows="4"></textarea></td>
+            </tr>
+            <tr>
+                
+            </tr>
+        
+    </table>
+    <div style="display:flex">
+        <button id="btn1">Save</button>
+        <button id="btn2">Cancel</button>
+        <button id="btn3">Resize</button>
+    </div>
+</form>
+</div>
+<style>
+    button
+    {
+        margin:15px;
+        height: 25px;
+    }
+    #btn1{
+        background-color: blue;
+        color:white;
+    }
+    #btn2{
+        border-color: blue;
+        background-color:white;
+    }
+    #btn3{
+        border-color: grey;
+        background-color:grey;
+    }
+    h2
+    {
+        font-size: 20px;
+    }
+    #div1
+    {
+        width:560px;
+        background-color:rgb(216, 172, 121);
+    }
+    .heading{
+        font-style: italic;
+        display: flex;
+        justify-content: center;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+    
+     
+    }
+    table
+    {
+        width: 100%;
+        border-spacing: 0px !important;
+    }
+    tr{
+        width: 100%;
+    }
+    tr:nth-child(odd)
+    {
+        width: 40%;
+    }
+    td{
+        border: 1px solid black;
+    }
+    *
+    {
+        padding:0px 10px;
+    }
+    p{
+        margin:6px;
+    }
+    #smallp,li
+    {
+        font-size:10px;
+        
+    }
+    input[type=email]
+    {
+        width: 40%;
+    }
+    input[type=email]
+    {
+        width: 90%;
+    }
+    input
+    {
+        min-height: 20px;
+    }
+    blockquote
+    {
+        padding:0px;
+    }
+    button{
+        border-radius: 25px;
+    }
+</style>
+</body>
+</html>
