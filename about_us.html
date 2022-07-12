@@ -1,54 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <title>About Us</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-    <div class="row" style="display: flex;
-    justify-content: space-between;">
-        <div class="col-md-5 lefter block" style="margin-left:0px !important">
-            <img src="lapi.png" alt="lapi">
+   <div class="container">
+    <div class="main">
+        <div class="row1">
+            <div class="col1">
+                <div class="box1 box">
+                   <img src="lapi.png" alt="lapi">
+                </div>
+            </div>
+            <div class="col2">
+                <div class="box2 box">
+                    <h3>About Us</h3>
+                    <h4>Sample Headline</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, repudiandae dignissimos maiores voluptas nesciunt, quasi itaque vitae nam saepe aliquam sint voluptatum incidunt eum tenetur.</p>
+                </div>
+            </div>
         </div>
-        <div class="col-md-5 righter block" style="margin-right:0px !important">
-            <h1>About Us</h1>
-            <p id="imp">Sammple Headline</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia labore quidem quas unde praesentium voluptates ea iure dolorem accusantium porro dicta voluptatum ex, excepturi harum rem aperiam quam nam quaerat nesciunt perferendis asperiores, nemo dolores! Consectetur rem quas quibusdam et. Aspernatur Aspernatur AspernaturAspernatur Lorem, ipsum. impedit?</p>
+        <div class="row2">
+            <div class="box3 box">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, quas. Architecto aliquam repudiandae minima! Esse, vitae eos. Minus iste explicabo pariatur tempore quae tenetur. Error eligendi aut deserunt, quidem eius suscipit quasi totam debitis cupiditate possimus vitae illum pariatur officia dolor assumenda, facilis expedita! Officiis aliquid ut saepe similique. Alias!</p>
+            </div>
         </div>
     </div>
-    <div class="row block">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem possimus voluptate, illum quisquam a consectetur saepe ad laborum dolorum nam neque magni, ipsam, perferendis nihil. Doloremque optio eveniet officia quia voluptatibus explicabo nesciunt at asperiores blanditiis est aut veniam nostrum, corporis quae, neque dolorum voluptas quasi possimus architecto repellat debitis assumenda deserunt recusandae. Et libero repudiandae quaerat necessitatibus iusto iure.
-        </p>
-    </div>
-    
+   </div>
+    <style>
+        body{
+            background-color: rgb(211, 211, 211);
+            display: flex;
+            justify-content: center;
+        }
+        .container
+        {
+            width: 80%;
+            min-width: 0px;
+        }
+           div{
+            margin:0px;
+            padding:0px;
+            overflow: hidden;
+        }
+        .row2
+        {
+            padding:0px 1% 0px 1%;
+            
+        }
+        .box
+        {
+            background-color: whitesmoke;
+        }
+     
+        .col1{
+            float: left;
+            padding: 1%;
+        }
+        .col2{
+            float: right;
+            padding: 1%;
+        }
+        .col1,.col2
+        {
+            width:48%;
+        }
+        .box1{
+            display: flex;
+    justify-content: center;
+    align-items: center;
+        }
+        .box1,.box2
+        {
+        
+            height:400px;
+            padding: 1% 3% 1% 3%;
+        }
+        .box3{
+            height: 200px;
+            float:left;
+            width: 94%;
+            margin-top: 1%;
+            padding: 1% 3% 1% 3%;
+           
+        }
+        img{
+     
+            display: block;
+            width: 50%;
+        }
+        h3
+        {
+            font-size: 3em;
+            margin-bottom: 0px;
+        }
+        h4{
+            font-size: 1.8em;
+        }
+        p{
+            font-size: 1.5em;
+            text-align: justify;
+        }
+      
+    </style>
 </body>
-<style>
-    body{
-        background-color: rgb(219, 219, 219);
-    }
-    .block
-    {
-        background-color: whitesmoke;
-    }
-    div{
-        padding:30px !important;
-        margin: 30px !important;
-  
-    }
-    #imp
-    {
-        font-weight: 800;
-    }
-    p{
-        font-size: 23px;
-    }
-    .col-md-5
-    {
-        height: 400px;
-    }
-</style>
 </html>
