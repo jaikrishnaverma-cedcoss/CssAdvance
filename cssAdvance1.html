@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template 1</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+          <h1>Site Name</h1>
+        </div>
+        <div class="navbar" style="display:flex;align-items:center">
+            <button class="nav">Home</button>
+            <button class="nav">About</button>
+            <button class="nav">Service</button>
+            <button class="nav">Contact Us</button>
+        </div>
+        <div class="body">
+            <div class="home">
+                 <h1>Page Heading</h1>
+                 <p style="font-size: 20vm;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt doloremque assumenda nemo quaerat suscipit doloribus tenetur minima maxime laboriosam quos illo ratione at, cupiditate placeat nostrum. Quae cupiditate dolor at qui quod molestiae molestias culpa facilis, eum, consequatur expedita neque libero rem! Sint voluptatem recusandae placeat iusto, voluptatibus, veniam necessitatibus non, quas perspiciatis quisquam numquam assumenda. Dicta minima ipsum modi!
+                 </p>
+                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat neque aliquid ex repellendus, eum, accusamus a ab laboriosam aut iusto dolor vero corrupti cupiditate ratione aspernatur quos, qui debitis odit animi ipsum! Repellendus nisi mollitia explicabo voluptas ducimus! Explicabo, debitis.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos maxime illum temporibus beatae repudiandae eligendi! Commodi, perferendis velit atque autem ducimus impedit eligendi iure? Esse at inventore fuga? A voluptatem omnis blanditiis. Corporis architecto, sunt a consectetur minima ad, ipsa culpa quasi tempora, dolorum beatae!</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, nihil earum repudiandae voluptatum autem aspernatur blanditiis cumque labore nemo quia, sed iusto libero sint a iste reprehenderit quam enim voluptate perferendis corporis! A ducimus ex enim eligendi ullam inventore qui sed sit accusantium hic. Quidem deleniti vero beatae quaerat laudantium distinctio aperiam officiis? Qui, corporis?</p>    
+            </div>
+            <div class="notification">
+                <h2>Aside Heading</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia quos dignissimos ipsa facere similique esse laborum nesciunt, beatae deleniti nam distinctio harum suscipit fugiat enim.</p>
+            </div>
+        </div>
+        <div class="footer">
+ <p>copyright &copy; Jai Krishna Verma 2022</p>
+        </div>
+    </div>
+</body>
+<style>
+    *
+    {
+        margin:0px;
+        padding:0px;
+       
+    }
+    :root {
+  --navcolor: rgb(59, 59, 59);
+  
+    }
+    body{
+        background-color: rgb(216, 213, 213);
+    }
+    .container
+    {
+        height: 100vh;
+    }
+    .header
+    {
+        height: 10%;
+        display: flex;
+        align-items: center;
+    }
+    .header h1{
+      margin-left:20px;
+    }
+    .navbar
+    {
+        background-color: var(--navcolor);
+        color: white;
+        height: 5%;
+
+    }
+    button
+    {
+        height: 100%;
+         border: none;
+        background-color:var(--navcolor);
+        color: white;
+        border-right: 2px solid white;
+        width: 7.2%;
+        outline: 0px;
+        font-size: 1.2em;
+    }
+    button:hover{
+        background-color: green;
+        font-size: 1.27em;
+    }
+
+    .body
+    {
+        display: flex;
+        height: 75%;
+
+    }
+    .home,.notification
+    {
+        padding: 50px;
+    }
+    .home{
+        background-color: whitesmoke;
+        width: 75%;
+    }
+    .notification
+    {
+        width: 25%;
+    }
+  .body h2,.body h1{
+    color: rgb(48, 66, 124);
+    font-weight: 1000;
+  }
+  p{
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: justify;
+  }
+  .footer
+  {
+    background-color:rgb(189, 185, 185);
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 1%;
+  }
+  
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    p {
+    font-size: 10px;
+    
+  }
+  .home
+  {overflow: hidden;
+}
+  h1
+  {
+    font-size: 15px;
+  }
+ h2{
+    font-size: 12px;
+  }
+  .home,.notification
+    {
+        padding: 5px;
+    }
+    button
+    {
+      
+        width: 24%;
+        outline: 0px;
+        font-size: 0.8em;
+    }
+    button:hover{
+    font-size: 0.9em;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+  .home
+  {
+    overflow: hidden;
+}
+  h1
+  {
+    font-size: 20px;
+  }
+ h2{
+    font-size: 16px;
+  }
+    p {
+    font-size: 13px;
+  }
+  .home,.notification
+    {
+        padding: 10px;
+    }
+    button
+    {
+      
+        width: 24.1%;
+        outline: 0px;
+        font-size: 0.8em;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    p {
+    font-size: 15px;
+  }
+  .home,.notification
+    {
+        padding: 25px;
+    }
+    button
+    {
+      
+        width: 12.1%;
+        outline: 0px;
+        font-size: 1.1em;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    p {
+    font-size: 16px;
+  
+  }
+  .home,.notification
+    {
+        padding: 30px;
+    }
+    button
+    {
+      
+        width: 10.1%;
+        outline: 0px;
+        font-size: 1.1em;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+h1
+{
+  font-size: 35px;
+
+}
+h2{
+  font-size: 28px;
+}
+p {
+  font-size: 18px;
+
+}
+.home,.notification
+  {
+      padding: 40px;
+  }
+  button
+  {
+    
+      width: 10%;
+      outline: 0px;
+      font-size: 1.4em;
+  }
+  button:hover
+  {
+      font-size: 1.5em;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1800px) {
+
+  h1
+  {
+    font-size: 35px;
+  
+  }
+ h2{
+    font-size: 28px;
+  }
+  p {
+    font-size: 24px;
+
+  }
+  button
+  {
+    
+      width: 10%;
+      outline: 0px;
+      font-size: 1.6em;
+  }
+  button:hover
+  {
+      font-size: 1.8em;
+  }
+ 
+}
+
+</style>
+</html>
