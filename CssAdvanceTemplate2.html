@@ -18,11 +18,13 @@
             </div>
         </div>
         <div class="box1">
+            <div>
             <h2>We Power eCommerce</h2>
             <p style="padding-top:0.2%">Lorem ipsum dolor sit.</p>
             <p>Lorem ipsum dolor sit amet.</p>
             <p>Lorem ipsum dolor sit amet consectetur.</p>
             <p>Lorem, ipsum.</p>
+            </div>
             <button class="btnlm">Learn More</button>
         </div>
         <div class="box2">
@@ -206,6 +208,19 @@
     .btnlm{
         margin-top: 2px;
     }
+}
+@media screen and ( max-height: 680px ) {
+.box1{
+    display: flex;
+    justify-content: space-around;
+}
+.box1 button{
+    height: 30px;
+    font-size: 20px;
+}
+.box1 div{
+    overflow: hidden;
+};
 }
 
 
